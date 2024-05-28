@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baixador de Audio do YouTube</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #progress-bar-container {
+      width: 100%;
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    #progress-bar {
+      width: 0;
+      height: 20px;
+      background-color: #4caf50;
+      text-align: center;
+      color: white;
+      border-radius: 5px;
+    }
+    #folder-path {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Baixador de Áudio do YouTube</h1>
+  <input type="text" id="url" placeholder="Insira o URL do YouTube" size="50" />
+  <button id="select-folder">Selecionar Pasta de Destino</button>
+  <span id="folder-path"></span>
+  <button id="download">Baixar Áudio</button>
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+  <p id="status"></p>
+  <p id="download-stats"></p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
